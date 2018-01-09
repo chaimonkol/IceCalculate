@@ -7,9 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import chaimonkol.krirk.ac.th.icecalculate.MainActivity;
 import chaimonkol.krirk.ac.th.icecalculate.R;
+
 
 /**
  * Created by acer on 9/1/2561.
@@ -24,8 +27,43 @@ public class MainFragment extends Fragment{
 //        Create Toolber
         createToolber();
 
+//        ShowName Controller
+        showNameController();
+
+//        Calculate Controller
+
+        calculateController();
+
 
     } // Main Method
+
+    private void calculateController() {
+        Button button = getView().findViewById(R.id.btncalculate);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment, new CalculateFragment())
+                        .addToBackStack(null)
+                        .commit();
+
+            }
+        });
+    }
+
+    private void showNameController() {
+        Button button = getView().findViewById(R.id.btnshowname);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                TextView textView = getView().findViewById(R.id.txtshowname);
+                textView.setText("ice");
+            }
+        });
+    }
 
     private void createToolber() {
 
