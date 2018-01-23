@@ -212,7 +212,13 @@ public class CalculateFragment extends Fragment implements View.OnClickListener 
                        num1ADouble = displayADouble;
 
                    }   else {
-                       num1ADouble = num1ADouble + displayADouble;
+                       if (minusAboolean) {
+                           num1ADouble = num1ADouble - displayADouble;
+                           minusAboolean = false;
+                       }else {
+                           num1ADouble = num1ADouble + displayADouble;
+                       }
+
                    }
 
                    Log.d(tag, "    num1 ==>   "   + num1ADouble);
@@ -245,7 +251,13 @@ public class CalculateFragment extends Fragment implements View.OnClickListener 
                         num1ADouble = Double.parseDouble(displayString);
 
                     } else {
-                        num1ADouble = num1ADouble - Double.parseDouble(displayString);
+                        if (addABoolean) {
+                            num1ADouble = num1ADouble + Double.parseDouble(displayString);
+                            addABoolean = false;
+                        }else {
+                            num1ADouble = num1ADouble + Double.parseDouble(displayString);
+                        }
+
 
                     }
                     Log.d(tag, "num1 at btnO ==>" + num1ADouble);
