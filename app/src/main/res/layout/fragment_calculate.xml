@@ -31,17 +31,20 @@
 
             <!--Display-->
             <TextView
+                android:maxLines="1"
+                android:id="@+id/txtDisplay"
+                android:textColor="#ffffff"
                 android:paddingRight="@dimen/padding"
                 android:gravity="end"
                 android:layout_weight="3"
                 android:textStyle="bold"
                 android:textSize="50sp"
-                android:text="12345"
                 android:layout_width="0dp"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content" />
 
             <!--Clear Button-->
             <Button
+                android:id="@+id/btnC"
                 android:layout_weight="1"
                 android:textSize="@dimen/h1"
                 android:text="C"
@@ -57,7 +60,51 @@
             android:padding="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent">
+
+            <!--button7-->
+            <Button
+                android:id="@+id/btn7"
+                android:textStyle="bold"
+                android:text="7"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button8-->
+            <Button
+                android:id="@+id/btn8"
+                android:textStyle="bold"
+                android:text="8"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button9-->
+            <Button
+                android:id="@+id/btn9"
+                android:textStyle="bold"
+                android:text="9"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button/-->
+            <Button
+                android:id="@+id/btnV"
+                android:textStyle="bold"
+                android:text="/"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
 
         <!--Row 3-->
         <LinearLayout
@@ -65,7 +112,49 @@
             android:padding="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent">
+
+            <!--button 4-->
+            <Button
+                android:id="@+id/btn4"
+                android:textStyle="bold"
+                android:text="4"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button 5-->
+            <Button
+                android:id="@+id/btn5"
+                android:textStyle="bold"
+                android:text="5"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button 6-->
+            <Button
+                android:id="@+id/btn6"
+                android:textStyle="bold"
+                android:text="6"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button x-->
+            <Button
+                android:id="@+id/btnM"
+                android:textStyle="bold"
+                android:text="x"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
 
         <!--Row 4-->
         <LinearLayout
@@ -73,7 +162,51 @@
             android:padding="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent">
+
+            <!--button 1-->
+            <Button
+                android:id="@+id/btn1"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button 2-->
+            <Button
+                android:id="@+id/btn2"
+                android:textStyle="bold"
+                android:text="2"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button 3-->
+            <Button
+                android:id="@+id/btn3"
+                android:textStyle="bold"
+                android:text="3"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--button +-->
+            <Button
+                android:id="@+id/btnMi"
+                android:textStyle="bold"
+                android:text="+"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
 
         <!--Row 5-->
         <LinearLayout
@@ -81,7 +214,39 @@
             android:padding="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent">
+
+            <!--button 0-->
+            <Button
+                android:id="@+id/btn0"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <!--button =-->
+            <Button
+                android:id="@+id/btnA"
+                android:textStyle="bold"
+                android:text="="
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <!--button - -->
+            <Button
+                android:id="@+id/btnO"
+                android:textStyle="bold"
+                android:text="-"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
 
 
     </LinearLayout>

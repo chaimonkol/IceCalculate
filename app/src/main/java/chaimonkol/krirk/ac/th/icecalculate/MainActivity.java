@@ -2,10 +2,11 @@ package chaimonkol.krirk.ac.th.icecalculate;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import chaimonkol.krirk.ac.th.icecalculate.fragment.MainFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,4 +23,8 @@ public class MainActivity extends AppCompatActivity {
     }  // Main Method
 
 
+    @Override
+    public void onClick(View view) {
+
+    }
 } // Main Class
